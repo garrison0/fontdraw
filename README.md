@@ -31,6 +31,6 @@ Note, the script that does this is placed In a script tag in the HTML file you p
 
 Now you can, using whatever graphics library you want, linearly interpolate between each “state” upon key press, mouse click, etc. Whatever fancy event works. 
 
-        See ‘characterize2.js’ and ‘typeWriterAbout.html’ to see exactly how this works!
+	See ‘characterize2.js’ and ‘typeWriterAbout.html’ to see exactly how this works!
  
 Now, you can obviously do this recursively, and have multiple states, some having just a story, some having just an image, some having both. This is what I wound up doing… however, the way I did it was tedious and copy-paste-y!
