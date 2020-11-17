@@ -1,0 +1,116 @@
+<html>
+
+  <head>
+    <title>huff huff</title>  
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+
+  <style>
+    .canvas { 
+      position: absolute;
+      z-index: -1;
+    }
+
+    @font-face {
+      font-family: 'Source Serif Pro';
+      src: url('fonts/SourceSerifPro-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .text {
+      font-family: 'Source Serif Pro';
+      font-size: 14px;
+      text-align: left!important;
+    }
+    
+    .text-margins {
+      margin-left: 52px;
+    }
+
+  </style>
+  
+  <body>
+    <script src="p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/opentype.js@latest/dist/opentype.min.js"></script>
+    
+    <div class="container-fluid text">
+      <div class="row justify-content-center text-margins">
+        <div id='parent' class="col">
+          <p class="characters">
+            at age 6, i was born in the rolling hillsides of lancaster county, pennsylvania. my parents found me wrapped in a husk of corn. as they unpeeled my fibrous shackles, they wept at my bereft state, and i cried out, “hurry father, there’s no time”
+          </p>
+          <p class="characters">
+            relatedly, in the summer of 2019, i went on a bit of a lone road trip, dragging my guitar all over the country with some lofty intentions
+          </p>
+          <p class="characters">
+            and there’s something funny, character-wise, about how i hardly played it. do i really want to be a musician?
+          </p>
+          <p class="characters">
+            it’s like you’re some schmuck who travels to live his dream of being a fisherman. you have a car full of fishing rods, bait, and spinners, but when you reach the next spot and start fishing your face slowly turns sour - not much has changed
+          </p>
+          <p class="characters">
+            or, it’s like you’ve set out to cross a mile long tunnel and around the halfway mark you’ve noticed the light at both ends has long become dim and unappealing 
+          </p>
+          <p class="characters">
+            what’s the use.
+          </p>
+          <p class="characters">  
+            a few months prior to this trek i'd just come back from a backpacking trip in India and Tanzania. i'd also just graduated from CMU. thus, i was living with a professor i'd befriended who graciously offered me a room while i assumedly pieced together a more sustainable plan 
+          </p>
+          <p class="characters">
+            in short, he was pittsburgh’s classical music audio guy. and i was an audio guy myself. as part of the deal, i remember covering a “hit record in protools and sit there” shift at the benedum theater for him. the sound tech there, i.e. the sound tech who has always been there (welcome to pittsburgh), is friendly, but quite a strong character. the kind who sees handshakes as an exercise in submission. during polite smalltalk related to why i was living with said professor, i offered up my immediate plan of crossing the states while busking and chasing the music dream. his response was “…and then what?” 
+          </p>
+          <p class="characters">
+            a year prior, though i'm the only one that remembered, i'd met him under similar circumstance. back then i amused him by detailing my live sound engineer ambition that i'd spent over 18 months making headroom in. his advice was 
+          </p>
+          <p class="characters">
+            “don’t do it” 
+          </p>
+          <p class="characters">
+            and 
+          </p>
+          <p class="characters">
+            “there’s no glory in it”
+          </p>
+          <p class="characters">
+            i'm not exactly the type to lack ambition. and it’s not like i hadn’t considered this. i agreed, more or less, but it seemed like a divergent and relatively feasible path that would directly support “plan A” - write and produce my own music. so i did it anyways
+          </p>
+          <p class="characters">
+            priorities shift right under your nose. now i'm a full stack engineer.
+          </p>
+          <p class="characters">
+            it’s unsatisfying to always be choosing between wistful destitution and min/maxing money vs free time with some engineering job that allows you to allocate spare energy and resources into “what you ‘really’ want to do”. it’s not about liking or not liking the engineering job. it might even become part of the end goal. but while the ambitions don’t just fade away, all your time sure does.
+          </p>
+          <p class="characters">
+            there’s a reason so many famous artists come from rich families with key connections or have otherwise spawned from general nepotism and industry fostering. the real luxury isn’t from any extravagance or expensive gear but from not being forced to choose between comfort, opportunity, and dedication to your craft. whatever you think your craft is. i might still be deciding on mine.
+          </p>
+          <p class="characters">
+            maybe it’s best not delineated beyond “art”. i'm letting some kind of dharmic principle sort the rest out
+          </p>
+          <p class="characters">
+            this figure was derived from georgia o'keeffe's blue II, 1916.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="characterize2bp2.js"></script>
+    
+    <script> 
+      document.onkeypress = () => download('charposes.txt', JSON.stringify(resDict));
+    </script>
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>
