@@ -1,8 +1,6 @@
 # fontdraw
 A typewriter art generator for JavaScript
 
-fontdraw - typewriter art using JavaScript 
-
 EXPLANATION:
 
 This is some old, prototype-y code with lots of poorly named scripts (first in P5.js, then PIXI.js)! 
